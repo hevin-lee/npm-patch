@@ -32,7 +32,8 @@ yarn add patch-package postinstall-postinstall
 - 打补丁
   
   需要手动执行命令：
-yarn patch-package your-package-name
+`yarn patch-package your-package-name`
+`npx patch-package your-package-name`
 运行这个命令后，在项目的根目录下会生成 patchs 目录，
 目录下生成一个 package-name+x.x.x .patch 文件，即包名+版本号，以.patch为后缀的一个文件。
 打开该文件，可以看到文件的内容，是记录了修改前后的diff，不同之处。
